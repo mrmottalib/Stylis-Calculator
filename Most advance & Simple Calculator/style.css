@@ -1,0 +1,100 @@
+/* General Body Style */
+body {
+    background: radial-gradient(circle at top left, #1a1a1a, #000000);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Calculator Container */
+  .calculator {
+    background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #000000, -10px -10px 30px #333333;
+    padding: 20px;
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .calculator:hover {
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 40px #000000, -15px -15px 40px #444444;
+  }
+  
+  /* Result and Input Display */
+  .result, .input {
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+    text-align: right;
+    box-shadow: inset 2px 2px 5px #000000, inset -2px -2px 5px #333333;
+  }
+  
+  /* Buttons Grid */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Button Styles */
+  button {
+    background: linear-gradient(145deg, #323232, #292929);
+    border: none;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 3px 3px 8px #000000, -3px -3px 8px #444444;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Hover and Active Effects */
+  button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #444444, #3a3a3a);
+    box-shadow: 5px 5px 12px #000000, -5px -5px 12px #555555;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+    box-shadow: inset 3px 3px 6px #000000, inset -3px -3px 6px #555555;
+  }
+  
+  /* Operator Buttons */
+  button.operator {
+    background: linear-gradient(145deg, #ff8a00, #cc6e00);
+  }
+  
+  button.operator:hover {
+    background: linear-gradient(145deg, #ffaa00, #dd8800);
+  }
+  
+  /* Utility Buttons */
+  button.utility {
+    background: linear-gradient(145deg, #ff4081, #e03371);
+  }
+  
+  button.utility:hover {
+    background: linear-gradient(145deg, #ff5e99, #f04980);
+  }
+  
+  /* Equals Button */
+  button.equals {
+    background: linear-gradient(145deg, #00e676, #00c564);
+    grid-column: span 2;
+  }
+  
+  button.equals:hover {
+    background: linear-gradient(145deg, #00ff88, #00d973);
+  }
+  
